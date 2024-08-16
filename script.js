@@ -14,7 +14,7 @@ const perguntas = [
         correta: 1 // A segunda alternativa é a correta
     },
     {
-        enunciado: "No momento de fazer uma maquiagem, qual é o produto que serve para selar a pele?",
+        enunciado: "No momento de fazer a maquiagem, qual é o produto que serve para selar a pele?",
         alternativas: [
             "Pó compacto/Solto",
             "Bruma Fixadora"

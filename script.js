@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "A produção norte-americana The Walking Dead, tem como personagem principal Rick Grimes, o qual possui 3 filhos, qual desses não é seu filho biólogico?",
+        enunciado: "A produção norte-americana The Walking Dead (TWD), tem como personagem principal Rick Grimes, o qual possui 3 filhos, qual desses não é seu filho biólogico?",
         alternativas: [
             "Carl Grimes",
             "Judith Grimes"

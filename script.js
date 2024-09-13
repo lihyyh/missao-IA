@@ -50,8 +50,9 @@ const perguntas = [
 let atual = 0;
 let perguntaAtual;
 let pontuacao = 0; // Inicie a pontuação em 0
+//FUNÇÃO MOSTRAR PERGUNTAS
 
-function mostraPergunta() {
+function mostrarPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.innerHTML = ''; // Limpa as alternativas anteriores

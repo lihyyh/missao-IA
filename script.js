@@ -65,6 +65,7 @@ function mostrarPergunta() {
         caixaAlternativas.appendChild(botao);
     });
 }
+//FUNÇÃO VERIFICAR RESPOSTA
 
 function verificaResposta(selecionada) {
     if (selecionada === perguntaAtual.correta) {

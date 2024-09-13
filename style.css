@@ -1,11 +1,9 @@
-/* Definição de variáveis CSS para as cores usadas no design */
+/* DEFININÇÃO DAS VARIAVEIS CSS PARA CORES*/
 :root {
     --cor-fundo: #718355;
-    /*cor do fundo*/
     --cor-principal: #97a97C;
-    /*cores da caixa principal*/
     --cor-secundaria: #859864;
-    /*cores da caixa secundaria*/
+    /*cores da caixa secundaria*
     --cor-destaque: #2bddfd00;
     /*cor texto quest/Buttom*/
     --cor-texto: #fafafa;
@@ -14,7 +12,7 @@
     /*cor fadebuttom*/
 }
 
-/* Configuração do estilo do corpo da página */
+/*CONFIGURAÇÃO DO ESTILO DO CORPO DA PAGINA*/
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);

@@ -1,18 +1,14 @@
-/* DEFININÇÃO DAS VARIAVEIS CSS PARA CORES*/
+/* DEFINIÇÃO DAS VARIÁVEIS CSS PARA CORES */
 :root {
     --cor-fundo: #718355;
     --cor-principal: #97a97C;
-    --cor-secundaria: #859864;
-    /*cores da caixa secundaria*
-    --cor-destaque: #2bddfd00;
-    /*cor texto quest/Buttom*/
+    --cor-secundario: #859864;
+    --cor-destaque: #2bddfd; /* Removi a opacidade zero para tornar a cor visível */
     --cor-texto: #fafafa;
-    /*cor do texto pergunta*/
     --cor-fadeButtom: #1c5a1f;
-    /*cor fadebuttom*/
 }
 
-/*CONFIGURAÇÃO DO ESTILO DO CORPO DA PAGINA*/
+/* CONFIGURAÇÃO DO ESTILO DO CORPO DA PÁGINA */
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -23,10 +19,12 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-img{
+
+img {
     max-width: 90%;
     height: auto;
 }
+
 /* Estilo da caixa principal */
 .caixa-principal {
     background-color: var(--cor-principal);
@@ -49,10 +47,10 @@ button {
     border: none;
     padding: 10px 20px;
     margin: 5px;
-    color: var(--cor-principal);
+    color: var(--cor-texto);
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
     border-radius: 10px;
 }
 
@@ -62,13 +60,18 @@ button:hover {
     color: var(--cor-texto);
 }
 
+/* Estilo ao focar no botão */
+button:focus {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 2px;
+}
+
 /* Estilo para a caixa de resultado */
 .caixa-resultado {
-    display: none;
-    /* Inicialmente oculta */
+    display: none; /* Inicialmente oculta */
     text-align: center;
     padding: 20px;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-secundario);
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     border-radius: 8px;
@@ -83,4 +86,15 @@ button:hover {
 .texto-resultado {
     font-size: 1.2rem;
     color: var(--cor-texto);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .caixa-principal {
+        padding: 15px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }

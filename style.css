@@ -3,7 +3,7 @@
     --cor-fundo: #718355;
     --cor-principal: #97a97C;
     --cor-secundario: #859864;
-    --cor-destaque: #2bddfd; /* Removi a opacidade zero para tornar a cor visível */
+    --cor-destaque: #2c55149a; /* Removi a opacidade zero para tornar a cor visível */
     --cor-texto: #fafafa;
     --cor-fadeButtom: #1c5a1f;
 }
